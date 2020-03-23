@@ -1,17 +1,7 @@
 pipeline {
-    
-  //  agent {
-    //    docker {
-      //       image: 'nginx:latest'
-        //     args '-p 8081:8081'}
-    //}node('agent any') {
-    // some block
-}//
-    node('agent any') {
-    // some block
-    }
+    agent any
     stages {
-        stage ('Clone') {
+         stage ('Clone') {
             steps {
                 sh " rm -rf * " 
                 sh "git clone https://github.com/OusmanaTraore/GitTrigger2.git "
