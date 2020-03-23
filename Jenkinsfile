@@ -1,10 +1,14 @@
 pipeline {
     
-    agent {
-        docker {
-             image: 'nginx:latest'
-             args '-p 80:80'
-    }
+  //  agent {
+    //    docker {
+      //       image: 'nginx:latest'
+        //     args '-p 8081:8081'}
+    //}node('agent any') {
+    // some block
+}//
+    node('agent any') {
+    // some block
     }
     stages {
         stage ('Clone') {
